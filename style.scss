@@ -1,0 +1,194 @@
+$color-work: hsl(15, 100%, 70%);
+$color-play: hsl(195, 74%, 62%);
+$color-study: hsl(348, 100%, 68%);
+$color-exercise: hsl(145, 58%, 55%);
+$color-social: hsl(264, 64%, 52%);
+$color-self-care: hsl(43, 84%, 65%);
+$color-white: white;
+$color-background: hsl(226, 43%, 10%);
+$color-port-gore: hsl(235, 46%, 20%);
+$color-purple: hsl(235, 45%, 61%);
+$color-royal-blue: hsl(246, 80%, 60%);
+$color-pale-blue: hsl(236, 100%, 87%);
+$color-minsk: #34397b;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $color-white;
+  background-color: $color-background;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  max-width: 900px;
+  width: 100%;
+  margin: 10rem auto;
+
+  @media (min-width: 767px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+  }
+
+  > div {
+    display: flex;
+    // align-items: end;
+    border-radius: 20px;
+
+    .inner {
+      background-color: $color-port-gore;
+      margin-top: 2rem;
+      padding: 1.5rem;
+      flex: 1;
+      border-radius: 20px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        margin-top: 0;
+        background-color: $color-minsk;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h4 {
+          margin: 0;
+          font-weight: 400;
+          font-size: .9rem;
+        }
+
+        .ellipsis {
+          button {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            background: url(./images/icon-ellipsis.svg) no-repeat center center;
+            // transform: rotate(90deg);
+            width: 25px;
+          }
+        }
+      }
+
+      .content {
+        h5 {
+          margin: 20px 0 10px;
+          font-weight: 200;
+          font-size: 2.5rem;
+        }
+
+        .date {
+          color: $color-purple;
+          font-weight: 300;
+          font-size: 12px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .first-box {
+    display: flex;
+    flex-direction: column;
+    grid-row: span 2;
+    // align-items: start;
+    background-color: $color-port-gore;
+
+    .inner {
+      margin-top: 0;
+      padding: 20px;
+      background-color: $color-royal-blue;
+    }
+
+    .picture {
+      flex: 0 0 70px;
+
+      img {
+        max-width: 100%;
+        width: auto;
+        border: 2px solid white;
+        border-radius: 50%;
+      }
+    }
+
+    .content {
+      p {
+        font-size: 0.8rem;
+        margin-top: 2rem;
+      }
+
+      h1 {
+        // The change didn't appear.
+        margin: none;
+        font-weight: 300;
+      }
+    }
+
+    .timeframes {
+      // padding: 20px;
+      margin: 20px;
+
+      button {
+        display: block;
+        margin-top: 0;
+        padding-bottom: 10px;
+        font-size: 15px;
+        color: $color-purple;
+        border: none;
+        background: transparent;
+        transition: all 0.3s ease-in-out;
+        &.selected {
+          color: $color-white;
+        }
+      }
+    }
+  }
+
+  .box {
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    h5 {
+      margin: 0;
+      font-size: 50px;
+      font-weight: 300;
+    }
+
+    &-2 {
+      background-image: url(./images/icon-work.svg);
+      background-color: $color-work;
+      // background-repeat: no-repeat;
+      // background-position: top right;
+    }
+
+    &-3 {
+      background-image: url(./images/icon-play.svg);
+      background-color: $color-play;
+    }
+
+    &-4 {
+      background-image: url(./images/icon-study.svg);
+      background-color: $color-study;
+    }
+
+    &-5 {
+      background-image: url(./images/icon-exercise.svg);
+      background-color: $color-exercise;
+    }
+    &-6 {
+      background-image: url(./images/icon-social.svg);
+      background-color: $color-social;
+    }
+
+    &-7 {
+      background-image: url(./images/icon-self-care.svg);
+      background-color: $color-self-care;
+    }
+  }
+}

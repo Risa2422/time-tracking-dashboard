@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: hsl(226, 43%, 10%);
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  max-width: 900px;
+  width: 100%;
+  margin: 10rem auto;
+}
+@media (min-width: 767px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+  }
+}
+.container > div {
+  display: flex;
+  border-radius: 20px;
+}
+.container > div .inner {
+  background-color: hsl(235, 46%, 20%);
+  margin-top: 2rem;
+  padding: 1.5rem;
+  flex: 1;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.container > div .inner:hover {
+  margin-top: 0;
+  background-color: #34397b;
+}
+.container > div .inner .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container > div .inner .header h4 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.container > div .inner .header .ellipsis button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  background: url(./images/icon-ellipsis.svg) no-repeat center center;
+  width: 25px;
+}
+.container > div .inner .content h5 {
+  margin: 20px 0 10px;
+  font-weight: 200;
+  font-size: 2.5rem;
+}
+.container > div .inner .content .date {
+  color: hsl(235, 45%, 61%);
+  font-weight: 300;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+.container .first-box {
+  display: flex;
+  flex-direction: column;
+  grid-row: span 2;
+  background-color: hsl(235, 46%, 20%);
+}
+.container .first-box .inner {
+  margin-top: 0;
+  padding: 20px;
+  background-color: hsl(246, 80%, 60%);
+}
+.container .first-box .picture {
+  flex: 0 0 70px;
+}
+.container .first-box .picture img {
+  max-width: 100%;
+  width: auto;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.container .first-box .content p {
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+.container .first-box .content h1 {
+  margin: none;
+  font-weight: 300;
+}
+.container .first-box .timeframes {
+  margin: 20px;
+}
+.container .first-box .timeframes button {
+  display: block;
+  margin-top: 0;
+  padding-bottom: 10px;
+  font-size: 15px;
+  color: hsl(235, 45%, 61%);
+  border: none;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.container .first-box .timeframes button.selected {
+  color: white;
+}
+.container .box {
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.container .box h5 {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 300;
+}
+.container .box-2 {
+  background-image: url(./images/icon-work.svg);
+  background-color: hsl(15, 100%, 70%);
+}
+.container .box-3 {
+  background-image: url(./images/icon-play.svg);
+  background-color: hsl(195, 74%, 62%);
+}
+.container .box-4 {
+  background-image: url(./images/icon-study.svg);
+  background-color: hsl(348, 100%, 68%);
+}
+.container .box-5 {
+  background-image: url(./images/icon-exercise.svg);
+  background-color: hsl(145, 58%, 55%);
+}
+.container .box-6 {
+  background-image: url(./images/icon-social.svg);
+  background-color: hsl(264, 64%, 52%);
+}
+.container .box-7 {
+  background-image: url(./images/icon-self-care.svg);
+  background-color: hsl(43, 84%, 65%);
+}
+
+/*# sourceMappingURL=style.css.map */
