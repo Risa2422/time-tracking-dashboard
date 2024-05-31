@@ -24,14 +24,14 @@ body {
 }
 .container > div {
   display: flex;
-  border-radius: 20px;
+  border-radius: 16px;
 }
 .container > div .inner {
   background-color: hsl(235, 46%, 20%);
   margin-top: 3rem;
   padding: 25px 30px;
   flex: 1;
-  border-radius: 20px;
+  border-radius: 16px;
   transition: all 0.3s ease-in-out;
 }
 .container > div .inner:hover {
@@ -57,9 +57,9 @@ body {
   cursor: pointer;
 }
 .container > div .inner .content h5 {
-  margin: 30px 0 10px;
+  margin: 23px 0 10px;
   font-weight: 200;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .container > div .inner .content .date {
   color: hsl(236, 100%, 87%);
@@ -140,6 +140,7 @@ body {
 .container .box-5 {
   background-image: url(./images/icon-exercise.svg);
   background-color: hsl(145, 58%, 55%);
+  background-position-y: 0;
 }
 .container .box-6 {
   background-image: url(./images/icon-social.svg);

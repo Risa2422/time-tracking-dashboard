@@ -37,14 +37,14 @@ body {
 
   > div {
     display: flex;
-    border-radius: 20px;
+    border-radius: 16px;
 
     .inner {
       background-color: $color-port-gore;
       margin-top: 3rem;
       padding: 25px 30px;
       flex: 1;
-      border-radius: 20px;
+      border-radius: 16px;
       transition: all 0.3s ease-in-out;
 
       &:hover {
@@ -77,9 +77,9 @@ body {
 
       .content {
         h5 {
-          margin: 30px 0 10px;
+          margin: 23px 0 10px;
           font-weight: 200;
-          font-size: 3rem;
+          font-size: 3.5rem;
         }
 
         .date {
@@ -180,6 +180,7 @@ body {
     &-5 {
       background-image: url(./images/icon-exercise.svg);
       background-color: $color-exercise;
+      background-position-y: 0;
     }
     &-6 {
       background-image: url(./images/icon-social.svg);
