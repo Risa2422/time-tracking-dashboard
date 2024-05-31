@@ -30,7 +30,11 @@ body {
   width: 100%;
   margin: 1rem auto;
 
-  @media (min-width: 767px) {
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 900px) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 245px);
     margin: 10rem auto;
@@ -98,6 +102,14 @@ body {
     flex-direction: column;
     grid-row: span 2;
     background-color: $color-port-gore;
+
+    @media screen and (min-width: 600px) {
+      grid-column: span 2;
+    }
+
+    @media screen and (min-width: 900px) {
+      grid-column: span 1;
+    }
 
     .inner {
       margin-top: 0;

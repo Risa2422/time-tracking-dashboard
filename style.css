@@ -16,7 +16,12 @@ body {
   width: 100%;
   margin: 1rem auto;
 }
-@media (min-width: 767px) {
+@media (min-width: 600px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
   .container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 245px);
@@ -73,6 +78,16 @@ body {
   flex-direction: column;
   grid-row: span 2;
   background-color: hsl(235, 46%, 20%);
+}
+@media screen and (min-width: 600px) {
+  .container .first-box {
+    grid-column: span 2;
+  }
+}
+@media screen and (min-width: 900px) {
+  .container .first-box {
+    grid-column: span 1;
+  }
 }
 .container .first-box .inner {
   margin-top: 0;
