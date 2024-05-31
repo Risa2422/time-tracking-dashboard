@@ -14,12 +14,13 @@ body {
   gap: 30px;
   max-width: 1110px;
   width: 100%;
-  margin: 10rem auto;
+  margin: 1rem auto;
 }
 @media (min-width: 767px) {
   .container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 245px);
+    margin: 10rem auto;
   }
 }
 .container > div {
