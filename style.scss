@@ -5,12 +5,12 @@ $color-exercise: hsl(145, 58%, 55%);
 $color-social: hsl(264, 64%, 52%);
 $color-self-care: hsl(43, 84%, 65%);
 $color-white: white;
-$color-background: hsl(226, 43%, 10%);
-$color-port-gore: hsl(235, 46%, 20%);
+$color-pale-blue: hsl(236, 100%, 87%);
 $color-purple: hsl(235, 45%, 61%);
 $color-royal-blue: hsl(246, 80%, 60%);
-$color-pale-blue: hsl(236, 100%, 87%);
 $color-minsk: #34397b;
+$color-background: hsl(226, 43%, 10%);
+$color-port-gore: hsl(235, 46%, 20%);
 
 * {
   box-sizing: border-box;
@@ -37,7 +37,6 @@ body {
 
   > div {
     display: flex;
-    // align-items: end;
     border-radius: 20px;
 
     .inner {
@@ -61,7 +60,7 @@ body {
         h4 {
           margin: 0;
           font-weight: 400;
-          font-size: .9rem;
+          font-size: 0.9rem;
         }
 
         .ellipsis {
@@ -70,7 +69,6 @@ body {
             border: none;
             padding: 0;
             background: url(./images/icon-ellipsis.svg) no-repeat center center;
-            // transform: rotate(90deg);
             width: 25px;
           }
         }
@@ -97,7 +95,6 @@ body {
     display: flex;
     flex-direction: column;
     grid-row: span 2;
-    // align-items: start;
     background-color: $color-port-gore;
 
     .inner {
@@ -120,18 +117,17 @@ body {
     .content {
       p {
         font-size: 0.8rem;
-        margin-top: 2rem;
+        margin: 2rem 0 0.5rem;
+        color: $color-pale-blue;
       }
 
       h1 {
-        // The change didn't appear.
-        margin: none;
+        margin: 0;
         font-weight: 300;
       }
     }
 
     .timeframes {
-      // padding: 20px;
       margin: 20px;
 
       button {
@@ -163,8 +159,6 @@ body {
     &-2 {
       background-image: url(./images/icon-work.svg);
       background-color: $color-work;
-      // background-repeat: no-repeat;
-      // background-position: top right;
     }
 
     &-3 {

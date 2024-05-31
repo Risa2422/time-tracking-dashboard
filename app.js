@@ -10,7 +10,7 @@ function generateActivities(timeframe) {
   } else if (timeframe === "monthly") {
     prevText = "Last Month";
   }
-  
+
   data.forEach((timeData) => {
     const newBox = document.createElement("div");
     newBox.classList.add("box", `box-${counter}`);
@@ -43,7 +43,6 @@ function removeBoxes() {
 const occurences = document.querySelectorAll(".terms");
 console.log(occurences);
 occurences.forEach((time) => {
-  console.log(time);
   time.addEventListener("click", () => {
     occurences.forEach((p) => {
       p.classList.remove("selected");

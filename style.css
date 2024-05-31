@@ -88,10 +88,11 @@ body {
 }
 .container .first-box .content p {
   font-size: 0.8rem;
-  margin-top: 2rem;
+  margin: 2rem 0 0.5rem;
+  color: hsl(236, 100%, 87%);
 }
 .container .first-box .content h1 {
-  margin: none;
+  margin: 0;
   font-weight: 300;
 }
 .container .first-box .timeframes {
